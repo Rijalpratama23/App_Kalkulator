@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+section {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/asset/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container-content {
+  display: grid;
+  align-items: center;
+  width: auto;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #1c1c1ccb;
+  box-shadow: 20px 14px 20px 14px;
+}
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, minmax(60px, auto));
+  row-gap: 13px;
+  column-gap: 13px;
+  width: auto;
+}
+.button-container .angka {
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+.button-container .angka:hover {
+  transition: .2s ease-in-out;
+  background-color: rgb(49, 49, 49);
+}
+.button-container .operator,
+.ac,
+.dollar,
+.persent,
+.nol,
+.titik {
+  border: none;
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-container .operator:hover,
+.ac:hover,
+.dollar:hover,
+.persent:hover,
+.nol:hover,
+.titik:hover {
+  background-color: rgb(106, 132, 245);
+  color: white;
+  transition: .2s ease-in-out;
+}
+
+.display {
+  display: flex;
+  border: 1px solid black;
+  width: auto;
+  border-radius: 15px;
+  align-items: center;
+  padding: 18px;
+  margin: 15px;
+  background: #ffffff;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 6px 0px 16px;
+}
+.nol {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+}
+.ac {
+  background-color: tomato;
+  color: white;
+}
