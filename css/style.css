@@ -10,10 +10,8 @@ section {
   display: grid;
   align-items: center;
   justify-content: center;
-  background-image: url(/asset/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
+  background-color: cadetblue;
 }
 .container-content {
   display: grid;
@@ -43,7 +41,7 @@ section {
   font-size: 25px;
 }
 .button-container .angka:hover {
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   background-color: rgb(49, 49, 49);
 }
 .button-container .operator,
@@ -66,7 +64,7 @@ section {
 .titik:hover {
   background-color: rgb(106, 132, 245);
   color: white;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .display {
@@ -93,7 +91,12 @@ section {
   background-color: tomato;
   color: white;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 750px) {
+  section {
+    background-image: url(/asset/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .container-content {
     box-shadow: none;
   }
