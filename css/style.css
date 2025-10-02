@@ -93,3 +93,8 @@ section {
   background-color: tomato;
   color: white;
 }
+@media screen and (max-width: 765px) {
+  .container-content {
+    box-shadow: none;
+  }
+}
